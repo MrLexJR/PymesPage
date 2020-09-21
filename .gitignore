@@ -3,4 +3,4 @@ bck.php
 sentence.sql
 
 # archivo config
-/config/global.php
+config/global.php
