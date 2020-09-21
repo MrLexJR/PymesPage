@@ -15,7 +15,7 @@ CREATE TABLE tbl_empresa (
 	pagetw TEXT DEFAULT '',
 	pageig TEXT DEFAULT '',
 	PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO tbl_empresa VALUES ();
 
@@ -27,6 +27,7 @@ SELECT id_producto,p.nombre,stock,pvp,caracteristicas,imagen, c.id_categoria,c.n
     FROM tbl_producto as p INNER JOIN tbl_marca as m ON p.id_marca = m.id_marca
     INNER JOIN tbl_categoria as c ON p.id_categoria = c.id_categoria WHERE p.id_categoria = 1;
 	
+-- Consulta a tabla empresa
 
 UPDATE tbl_empresa SET
 	nombre='', direccion='', siglas='', mision='', vision='',nosot='', celular='',telefono = '', logo='',
